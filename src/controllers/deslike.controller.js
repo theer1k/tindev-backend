@@ -22,10 +22,6 @@ module.exports = {
                 return res.status(400).json({ error: 'User not exists' });
             }
 
-            if (targetDev.deslikes.includes(loggedDev._id)) {
-                console.log('DEU MATCH');
-            }
-
             if (!loggedDev.deslikes.includes(targetDev._id)) {
                 loggedDev.deslikes.push(targetDev._id);
 
