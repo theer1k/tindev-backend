@@ -15,7 +15,7 @@ io.on('connection', socket => {
     connectedUsers[user] = socket.id
 });
 
-mongoose.connect('mongodb+srv://oministack:oministack@cluster0-pajci.mongodb.net/oministack?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://localhost:27017/tindev', {
     useNewUrlParser: true
 });
 
